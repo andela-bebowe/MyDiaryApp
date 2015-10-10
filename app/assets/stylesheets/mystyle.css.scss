@@ -1,2 +1,41 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body
+{
+	padding: 150px;
+	padding-bottom: 40px;
+	background-image: url("background1.png");
+	background-color: white;
+	opacity: -100%;
+}
+.greener
+{
+	background-color: rgb(200, 250, 150);
+}
+.jumbotron
+{
+	text-align: center;
+	padding-top: 100px;
+	background-image: url(beautiful-wallpaper3.jpg);
+	background-color: rgb(280, 100, 220);
+	background-size: cover;
+	font-weight: 20px;
+	color: blue;
+	h1{ font-size: 40px;}
+	.btn a
+	{
+		color: white;
+		font-weight: 5px;
+	}
+}
+footer
+{
+	height: 40px;
+	position:absolute;
+    	bottom:0;
+    	background-color: rgb(180, 180, 250);
+    	text-align: center;
+    	color: white;
+    	font-size: 20px;
+}
