@@ -3,7 +3,6 @@ ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-gem 'rspec-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -40,6 +39,7 @@ group :development, :test do
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0'
 	gem 'spring'
+	gem 'rspec-rails'
 end
 
 group :production do

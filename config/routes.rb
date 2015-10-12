@@ -16,6 +16,10 @@ Rails.application.routes.draw do
 
 	delete 'logout' => 'sessions#delete'
 
+	get 'profile' => 'users#new'
+
+	get 'settings' => 'users#new'
+
 	resources :users
 
 	# The priority is based upon order of creation: first created -> highest priority.

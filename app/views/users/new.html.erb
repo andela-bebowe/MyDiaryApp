@@ -1,0 +1,52 @@
+<%provide(:title, 'Sign Up')%>
+
+<div class="container ">
+ 	<div class="form-wrapper">
+	<%= form_for @user do |f|%>
+
+	<div class="form-group">
+		<%= f.label :name%>
+		<%= f.text_field :name, placeholder: "Enter name" , class: "form-control"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :email%>
+		<%= f.email_field :email, placeholder: "Enter email" , class: "form-control"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :status %>
+		<%= f.select :status, [["Single", "single"], ["Married", "married"], ["Engaged", "engaged"], ["In a Relationship", "relationship"]], {prompt: "Select status"}, {class: "form-control"} %>
+	</div>
+
+	<div class="form-group">
+	    <div class="row">
+	      <div class="col-md-6">
+	      <%= f.label :sex %>
+		<%= f.select :sex, [["Female", "female"], ["Male", "male"]], {}, {class: "form-control"} %>
+		</div>
+		 <div class="col-md-6">
+		 <%= f.label :age %>
+		  <%= f.number_field :age, class: "form-control", value: 18, min:6  %>
+		  </div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :password%>
+		<%= f.password_field :password, placeholder: "Enter password" , class: "form-control"%>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :password_confirmation, "Confirm Password"%>
+		<%= f.password_field :password_confirmation, placeholder: "Re-enter password" , class: "form-control"%>
+	</div>
+
+	<%= f.submit "Create my account", class: "btn btn-primary" %>
+
+	<% end %>
+	</div>
+</div>
+
+
+	
