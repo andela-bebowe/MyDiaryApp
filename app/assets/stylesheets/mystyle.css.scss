@@ -3,58 +3,144 @@
 
 body
 {
-	padding: 0px;
-	padding-bottom: 40px;
 	background-image: url("background1.png");
-	background-color: white;
-	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
 }
-
+.messager
+{
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	margin-top: 100px;
+	margin-bottom: -50px;
+	width: 300px;
+}
+.icon-bar
+{
+	background-color: gainsboro;
+}
 .greener
 {
-	background-color: rgb(200, 250, 150);
+	a{color: white; letter-spacing: 2px;}
+	background-color: rgba(0, 0, 0, 0.3);
+	a:hover{color: black;transition-duration:1s; font-size: 20px;}
+	.dropdown-menu a{color: white; letter-spacing: 2px;}
+	 .navbar-right li:hover{background-color: rgba(0, 0, 0, 0.3);}
 }
-.jumbotron
+.landing-page
 {
 	text-align: center;
-	padding-top: 100px;
-	background-image: url(beautiful-wallpaper3.jpg);
-	background-color: rgb(280, 100, 220);
-	background-size: cover;
-	font-weight: 40px;
-	color: rgb(70, 280, 270);
+	background-attachment: fixed;
+	background-image: url(https://ashleyomelia.files.wordpress.com/2015/06/dollarphotoclub_75164151.jpg);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	background-position: 70% 90%;
 	h1{ font-size: 60px;}
-	.btn a
-	{
-		color: white;
-		font-weight: 5px;
+	.btn{
+		a{
+			color: white;
+			font-weight: bold;
+		}
 	}
 }
 
 footer
 {
 	height: 40px;
-	position:absolute;
-    	bottom:0;
-    	background-color: rgb(180, 180, 250);
-    	text-align: center;
-    	color: white;
-    	font-size: 20px;
-    	left: 0px;
-    	right: 0px;
-    	clear:both;
-    	width: 100%;
-    	margin-bottom: -155px;
+	bottom:0;
+	background-color: rgb(180, 180, 250);
+	padding-top: 5px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	clear:both;
+	width: 100%;
+	position: fixed;
+	left:0px;
 }
 .form-wrapper
 {
-	 width: 50%;
-	 margin-top: 90px;
-   	margin-right: auto;
-   	margin-left: auto;
-   	padding: 20px;
-   	border:  1px solid #ccc;
-   	border-radius:  4px;
-   	-moz-border-radius: 4px;
-   	background-color: white;
+	width: 50%;
+	height: 70%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	border:  1px solid #ccc;
+	border-radius:  4px;
+	-moz-border-radius: 4px;
+	background-color: white;
+	#login-join
+	{
+		font-weight: bold;
+		a:hover{text-decoration: none; color:green;}
+	}
+}
+.error-explanation
+{
+	text-align: center;
+	color: red;
+	ul 
+	{
+		color: red;
+		padding: 0px;
+  	}
+}
+.landing-content
+{
+	padding-top: 200px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	p
+	{
+		margin: 0 0 10px;
+		color: white;
+		font-size: 19px;
+		line-height: 1;
+	}
+	h1
+	{
+		color: white;
+	}
+	.navbar-header ul li:hover
+	{
+		transition-duration:0.5s;
+		color:black;
+	}
+	.box
+	{
+		margin: auto;
+		width: 217px;
+		border-radius: 7px;
+		margin-top: 40px;
+		font-size: 20px;
+		padding: 20px;
+		background-color: green;
+		a
+		{
+			color: white;
+			font-weight: bold;
+			opacity: 0.8;
+		}
+		a:hover
+		{
+			text-decoration: none;
+		}
+		a:active
+		{
+			text-decoration: none;
+		}
+	}
+	.box:hover
+	{
+		transition-duration:1.2s;
+		margin-top: 20px;
+	}
 }

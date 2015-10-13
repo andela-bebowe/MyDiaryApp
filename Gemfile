@@ -45,6 +45,7 @@ end
 group :production do
 	gem 'pg'
 	 gem 'rails_12factor'
+	 gem 'puma', '2.11.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -8,6 +8,12 @@ Rails.application.routes.draw do
 
 	get 'signup' => 'users#new'
 
+	get 'show' => 'users#show'
+
+	get 'profile' => 'users#new'
+
+	get 'settings' => 'users#new'
+
 	delete 'delete' => 'users#delete'
 
 	get 'login' => 'sessions#new'
@@ -15,10 +21,6 @@ Rails.application.routes.draw do
 	post 'login' => 'sessions#create'
 
 	delete 'logout' => 'sessions#delete'
-
-	get 'profile' => 'users#new'
-
-	get 'settings' => 'users#new'
 
 	resources :users
 
