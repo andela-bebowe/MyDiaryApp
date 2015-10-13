@@ -14,13 +14,13 @@ Rails.application.routes.draw do
 
 	get 'settings' => 'users#new'
 
-	delete 'delete' => 'users#delete'
+	get 'delete' => 'users#delete'
 
 	get 'login' => 'sessions#new'
 
 	post 'login' => 'sessions#create'
 
-	delete 'logout' => 'sessions#delete'
+	get 'logout' => 'sessions#delete'
 
 	resources :users
 

@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 		if @user.save
 			log_in(@user)
+			@current_user = user
 			flash[:success] = "Welcome to MyDiary"
 			redirect_to @user
 		else

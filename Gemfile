@@ -37,6 +37,7 @@ group :development, :test do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
 	# Access an IRB console on exception pages or by using <%= console %> in views
+	gem 'pry'
 	gem 'web-console', '~> 2.0'
 	gem 'spring'
 	gem 'rspec-rails'
